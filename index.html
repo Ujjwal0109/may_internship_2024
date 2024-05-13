@@ -11,9 +11,13 @@
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-  <link rel="shortcut icon" href="images/x.png" type="">
+  
+ 
+  <link rel="icon" type="image/png" href="images\big_x_icon_155753.png" id="favicon">
 
   <title> Xplode.in </title>
+ 
+
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -48,45 +52,51 @@
       </div>
     </div>
 
-    <!-- header section strats -->
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container ">
-          <a class="navbar-brand " href="index.html">
-            <span>
-              Xplode
-            </span>
-          </a>
 
-         <a href="#" class="collapse navbar-collapse"></a>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav  ">
-              <li class="nav-item active">
-                <a class="nav-link active" href="#home" >Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about" > About</a>
-              </li> 
-               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Services
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#aisol">AI Solutions</a>
-                  <a class="dropdown-item" href="#mesol">Media Solutions</a>
-                </div>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="#team" >Team</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"> <i class="fa fa-user" aria-hidden="true"></i> BOOK/CALL</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+    <!-- header section strats -->
+<header class="header_section">
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg custom_nav-container">
+      <a class="navbar-brand" href="index.html">
+      <span style="display: inline-flex; align-items: center;">
+  <img src="images\big_x_icon_155753.png" alt="Xplode Logo" style="height: 60px;width: 60px; margin-right: 0px;">
+ <span>plode</span>
+ </span>
+</a>
+
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Services
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#aisol">AI Solutions</a>
+              <a class="dropdown-item" href="#mesol">Media Solutions</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i> BOOK/CALL</a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </nav>
+  </div>
+</header>
+
+
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section " id="home">
@@ -106,7 +116,7 @@
                       Transform Your Business Operations with Advanced AI Solutions
                     </p>
                     <div class="btn-box">
-                      <a href="" class="btn1 animate__animated wwow animate__fadeInUp">
+                      <a href="#aisol" class="btn1 animate__animated wwow animate__fadeInUp">
                         Get started
                       </a>
                     </div>
@@ -419,11 +429,28 @@
  <section class="join-section">
   <div class="container animate__animated wow animate__fadeInUp">
     <p>Need a successful project?</p>
-    <h2 style="font-family: 'vietnamese', serif;">Let's work Together!</h2><br>
-    <form class="email-form" action="#" method="post">
-      <div class="input-container">
-        <input type="email" name="email" id="email" placeholder="Enter your email:abc@gmail.com">
-        <button type="submit">Subscribe</button>
+<h2 style="font-family: 'vietnamese', serif;">Let's work Together!</h2><br>
+<form class="email-form" action="#" method="post">
+  <div class="input-container">
+    <input type="email" name="email" id="email" placeholder="Enter your email: abc@gmail.com">
+    <button type="submit">Subscribe</button>
+  </div>
+</form>
+<style>
+.input-container {
+  display: flex;
+}
+
+.input-container input[type="email"] {
+  flex: 1;
+  margin-right: 10px; /* Adjust margin as needed */
+}
+
+.input-container button {
+  flex-shrink: 0;
+}
+
+</style>
         
       </div>
     </form>
